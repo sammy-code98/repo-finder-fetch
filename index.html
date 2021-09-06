@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://use.fontawesome.com/08f2cc3996.js"></script>
+  </head>
+  <body>
+    <form id="search">
+      <input
+        type="text"
+        id="usname"
+        class="username-input"
+        placeholder="Enter Username"
+      />
+      <button class="btn">
+        <i class="fas fa-search"></i>
+      </button>
+    </form>
+    <div class="profile-container">
+      <div class="profile-img loading"></div>
+      <h2 class="username loading"></h2>
+      <div class="profile-info">
+        <p class="info followers loading">
+          <span id="followers"></span>
+        </p>
+        <p class="info repositories loading">
+          <span id="repositories_data"></span>
+        </p>
+        <p class="info following loading">
+          <span id="following"></span>
+        </p>
+      </div>
+      <div class="overlay">User Doesn't Exist</div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
